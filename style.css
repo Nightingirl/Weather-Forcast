@@ -1,0 +1,109 @@
+
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  .app{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, #837F7F 0%, rgba(175, 172, 172, 0.921875) 46.17%, rgba(166, 157, 157, 0.776042) 78.14%, #413E3E 100%);
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position:fixed;
+    width: 350px;
+    height: 500px;
+    align-self: center;
+    background: linear-gradient(180deg, #FCF3F3 0%, rgba(252, 243, 243, 0) 100%);
+    background-blend-mode:lighten;
+    box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+
+  }
+  .notification{
+    height: 50px;
+    position:absolute ;
+    top:0;
+    width: 100%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    background-color: rgb(211, 160, 160);
+    border-color: #413E3E;
+    display: none;
+    text-align: center;
+  }
+  .notification p{
+    color: rgb(192, 42, 42);
+    padding-top: 8px;
+    font-size: 30px;
+  }
+
+  .icon{
+    position:absolute;
+    top:50px;
+    left: 10px;
+  }
+
+  .weather-container{
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 60%;
+    text-align: center;
+  }
+  .temperature{
+    font-size: 75px;
+    font-family: cursive, sans-serif;
+  }
+  .temp-info{
+    font-size: 25px;
+    font-family: cursive, sans-serif;
+
+  }
+  .location{
+    font-size: large;
+  }
+
+  .info{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+    text-align: right;
+  }
+  .row1, .row2{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+.humidity, .wind-speed, .AQI, .feelslike, .pressure{
+  font-size: 18px;
+  text-align: center;
+  color: rgb(231, 227, 227);
+}
+.humidity span, .wind-speed span, .AQI span, .feelslike span, .pressure span{
+  color: #494646;
+
+  
+}
+.arrow img{
+  position: absolute;
+  left: 30px;
+  height: auto;
+  width: 60px;
+  transition: transform 1s linear;
+  transform: rotate() ;
+  
+  
+}
+  
